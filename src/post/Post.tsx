@@ -5,7 +5,7 @@ const Post: React.FC = () => {
 
     const wrapperSx: ThemeUIStyleObject = {
         backgroundColor: '#f0f0f0',
-        width: '500px',
+        width: '740px',
         padding: '15px',
         minHeight: '150px',
         borderRadius: '5px',

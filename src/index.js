@@ -1,25 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import Person from './person/Person';
-import Home from './home/Home';
+import Post from './posts/Post';
 import { Route } from 'react-router-dom';
 
-const Help = () => {
-  return (
-    <h1>Hello</h1>
-  )
-}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/person/:name/' element={<Person name='ryan' />} />
+        <Route path='/posts/:id' element={<Post />} />
+        <Route path='/people/:name' element={<Person />} />
       </Routes>
     </Router>
   </React.StrictMode>
